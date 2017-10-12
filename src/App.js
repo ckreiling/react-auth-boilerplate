@@ -4,16 +4,16 @@ import './App.css'
 import Login from "./auth/components/Login"
 import AuthenticatedRoute from "./auth/components/AuthenticatedRoute"
 import LoginStatus from './auth/components/SignoutButton'
-import Dashboard from "./dashboard/components"
+import Nuke from "./nuke/components"
 
 class App extends Component {
   render = () => (
     <BrowserRouter>
-      <div>
+      <div className="App">
         <LoginStatus/>
         <Switch>
           <Route path="/login" exact component={Login}/>
-          <AuthenticatedRoute path="/dashboard" authComponent={Dashboard}/>
+          <AuthenticatedRoute path="/" exact authComponent={Nuke}/>
         </Switch>
       </div>
     </BrowserRouter>

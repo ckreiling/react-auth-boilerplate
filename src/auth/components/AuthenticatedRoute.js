@@ -27,7 +27,7 @@ class _AuthenticatedRoute extends React.Component {
         ? (<Component {...newProps}/>)
         : (
           <Redirect to={{
-            pathname: '/login',
+            pathname: '/auth',
             state: {from: props.location}
           }}/>
         )

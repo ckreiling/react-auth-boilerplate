@@ -1,0 +1,3 @@
+export const REQUEST_NUKE = 'REQUEST_NUKE'
+export const RECEIVE_NUKE = 'RECEIVE_NUKE'
+export const RECEIVE_ERROR = 'RECEIVE+ERROR'

@@ -10,6 +10,7 @@ import {store} from './store'
  */
 export const URL = 'http://localhost:8000/api/'
 export const LOGIN = 'auth/'
+export const NUKE = 'nuke/'
 
 export const apiClient = function () {
   const token = store.getState().token
